@@ -2,10 +2,12 @@
 <html>
 <head>
 	<title>Lorem Ipsum</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<link rel="stylesheet" href="./css/bootstrap.css">
 	<link rel="stylesheet" href="./css/style.css">
-	<script src="./js/jquery-1.12.4.js"></script>
+	<script src="./js/jquery-1.12.4.min.js"></script>
 	<script src="./js/bootstrap.js"></script>
+	<script src="./js/functions.js"></script>
 </head>
 <body>
 	<div class="container">
@@ -14,22 +16,30 @@
 	    <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p> 
 	  </div>
 	  <div class="row">
-	    <div class="col-sm-4">
+	    <div class="col-md-4">
 	      <h3>Column 1</h3>
 	      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
 	      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+	      <div class="col-xs-offset-8 col-md-offset-8 col-lg-offset-8 col-md-3">
+	      	<button type="startGame" onclick="startGame()" class="btn btn-default">Default</button>
+	      </div>
 	    </div>
-	    <div class="col-sm-4">
+	    <div class="col-md-4">
 	      <h3>Column 2</h3>
 	      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
 	      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
 	    </div>
-	    <div class="col-sm-4">
+	    <div class="col-md-4">
 	      <h3>Column 3</h3>        
 	      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
 	      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
 	    </div>
 	  </div>
 	</div>
+	<footer>
+		<div class="col-xs-offset-6 col-md-offset-8 col-lg-offset-8 col-md-4">
+			Hecho por Fco.José Cruz Jiménez <!-- & Reyes Montes Escalante -->
+		</div>
+	</footer>
 </body>
 </html>
