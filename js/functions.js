@@ -1,9 +1,10 @@
-console.log("OK");
+console.log("Cargado JS");
 
-function startGame() {
-	console.log("Inicio Juego");
-	window.location.href = "./game.html";
-}
+$(document).ready(function(){
+	$("#startGame").bind("click", function(){
+		cargarOperaciones();
+	});
+});
 
 function testingAjax() {
   var xhttp = new XMLHttpRequest();
@@ -14,4 +15,17 @@ function testingAjax() {
   };
   xhttp.open("GET", "./resources/ajax_info.txt", true);
   xhttp.send();
+}
+
+function cargarOperaciones(){
+	console.log("Inicio Juego");
+	window.location.href = "./game.html";
+	generarOperacion();
+}
+
+function generarOperacion(){
+	console.log("generarOperacion");
+	$(document).ready(function(){
+		$("#num1").text("2");
+	});
 }
